@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@inlet/react-pixi": "^6.6.5",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -10,6 +11,8 @@
     "@types/node": "^16.7.13",
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
+    "pixi-viewport": "^4.34.4",
+    "pixi.js": "^6.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
@@ -39,5 +42,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "prettier": {
+    "bracketSpacing": false,
+    "singleQuote": true,
+    "jsxBracketSameLine": false,
+    "trailingComma": "none",
+    "semi": false,
+    "printWidth": 80,
+    "proseWrap": "always"
   }
 }

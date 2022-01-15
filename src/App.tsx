@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Sprite, Stage} from '@inlet/react-pixi'
+import Border from './background/Border'
+import Tile from './background/Tile'
+import Viewport from './plumbing/Viewport'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Stage options={{resizeTo: window}}>
+      <Viewport>
+        <Sprite position={[150, 100]} image="./sprites/raccoon.png" />
+        <Tile position={[0, 0]} />
+        <Tile position={[30, 0]} />
+        <Border />
+      </Viewport>
+    </Stage>
+  )
 }
-
-export default App;
+export default App
